@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    int fingers;
+
+    cout << "Введите номер пальца (1-5): ";
+    cin >> fingers;
+    switch (fingers) {
+    case 1:
+        cout << "Большой" << endl;
+        break;
+    case 2:
+        cout << "Укозательный" << endl;
+        break;
+    case 3:
+        cout << "Средний" << endl;
+        break;
+    case 4:
+        cout << "Безымянный" << endl;
+        break;
+    case 5:
+        cout << "Мизинец" << endl;
+        break;
+    }
+
+    return 0;
+}

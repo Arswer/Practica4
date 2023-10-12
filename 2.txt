@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    int days;
+
+    cout << "Введите номер дня недели (1-7): ";
+    cin >> days;
+
+    switch (days) {
+    case 1:
+       cout << "Понедельник: Пресс качат" << endl;
+        break;
+    case 2:
+        cout << "Вторник: Бегит" << endl;
+        break;
+    case 3:
+        cout << "Среда: Турник" << endl;
+        break;
+    case 4:
+        cout << "Четверг: Анжумания" << endl;
+        break;
+    case 5:
+        cout << "Пятница: Гантбли" << endl;
+        break;
+    case 6:
+        cout << "Суббота: Учыт с++" << endl;
+        break;
+    case 7:
+        cout << "Воскресенье: Отых" << endl;
+        break;
+    default:
+        cout << "Неверный порядковый номер дня" << endl;
+        break;
+    }
+
+    return 0;
+}

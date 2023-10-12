@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cctype> 
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    char station;
+
+    cout << "Введите букву станции (A, B, C, D, E): ";
+    cin >> station;
+
+    station = tolower(station);
+
+    switch (station) {
+    case 'a':
+        cout << "Станция Электрозаводская - Академическая: время отправления 13:20, время в пути 29 минут" << endl;
+        break;
+    case 'b':
+        cout << "Станция Филатов луг - Арбатская: время отправления 8:00, время в пути 38 минут " << endl;
+        break;
+    case 'c':
+        cout << "Станция Бауманская - Перово: время отправления 16:35, время в пути 22 минуты" << endl;
+        break;
+    case 'd':
+        cout << "Станция Цветной бульвар - Полянка: время отправления 17:32, время в пути 6 минут" << endl;
+        break;
+    case 'e':
+        cout << "Станция Красные ворота - Бульвар Рокоссовского: время отправления 7:21, время в пути 14 минут" << endl;
+        break;
+    default:
+        cout << "Неверная буква станции" << endl;
+        break;
+    }
+
+    return 0;
+}

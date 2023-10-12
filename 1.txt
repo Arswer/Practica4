@@ -1,0 +1,29 @@
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    int Visitors;
+    cout << "Введите количество посетителей спортзала за день: ";
+    cin >> Visitors;
+
+    int age, oldestAge = INT_MIN, youngestAge = INT_MAX, totalAge = 0;
+
+    for (int i = 0; i < Visitors; i++) {
+        cout << "Введите возраст посетителя " << i + 1 << ": ";
+        cin >> age;
+
+        oldestAge = max(oldestAge, age);
+        youngestAge = min(youngestAge, age);
+        totalAge += age;
+    }
+
+    double averageAge = static_cast<double>(totalAge) / Visitors;
+
+    cout << "Самый старший возраст: " << oldestAge << endl;
+    cout << "Самый младший возраст: " << youngestAge << endl;
+    cout << "Средний возраст: " << averageAge << endl;
+
+    return 0;
+}
